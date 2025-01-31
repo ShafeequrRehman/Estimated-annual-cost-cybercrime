@@ -53,6 +53,9 @@
       color: rgba(255, 255, 255, 0.863);
 
     }
+    .textangle{
+      transform: rotate(0deg);
+    }
 
     .bars3 {
       display: flex;
@@ -149,6 +152,9 @@
     /* position: relative !important; */
     z-index: 0 !important;
   }
+  .textangle{
+      transform: rotate(20deg) !important;
+    }
   .barmain3 {
       flex: 1;
       z-index: 2 !important;
@@ -164,7 +170,8 @@
     position: absolute;
     bottom: 1px;
     left: 67px;
-    display: flex
+    display: flex;
+    background-color: red
 ;
     justify-content: space-around;
     width: calc(100% - 24%);
@@ -175,12 +182,16 @@
     font-size:xx-small;
   }
   }
-  @media screen and (max-width: 767px){ /* Tablet view */
+  @media screen and (max-width: 768px){ /* Tablet view */
       .bar3 .corner3 {
       position: absolute;
       width: 5px; /* Corner size */
       height: 5px; /* Corner size */
+      background-color: red
 
+    }
+    .textangle{
+      transform: rotate(20deg) !important;
     }
  .barmain3 {
       flex: 1;
@@ -203,15 +214,23 @@
     z-index: 0 !important;
   }
   .bars3 {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      height: 100%;
-      padding-left: 20px;
-      padding-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        width: calc(100% - -297px);
+        padding-left: 20px;
+        padding-right: 10px;
     }
     .x-axis-labels3 {
-      left: 72px;
+      left: 79px;
+      position: absolute;
+        bottom: 1px;
+        display: flex
+;
+        justify-content: space-around;
+        width: calc(100% - -203px);
+        font-size: 0.7rem;
     }
     .grid-line-3m3 {
     bottom: 130px; /* 80% height for $3 Million */
@@ -476,18 +495,18 @@
       
       <!-- X-Axis Labels -->
       <div class="x-axis-labels3">
-        <span class="font-mobile3">2017</span>
-        <span class="font-mobile3">2018</span>
-        <span class="font-mobile3">2019</span>
-        <span class="font-mobile3">2020</span>
-        <span class="font-mobile3">2021</span>
-        <span class="font-mobile3">2022</span>
-        <span class="font-mobile3">2023</span>
-        <span class="font-mobile3">2024</span>
-        <span class="font-mobile3">2025</span>
-        <span class="font-mobile3">2026</span>
-        <span class="font-mobile3">2027</span>
-        <span class="font-mobile3">2028</span>
+        <span class="font-mobile3 textangle">2017</span>
+        <span class="font-mobile3 textangle">2018</span>
+        <span class="font-mobile3 textangle">2019</span>
+        <span class="font-mobile3 textangle">2020</span>
+        <span class="font-mobile3 textangle">2021</span>
+        <span class="font-mobile3 textangle">2022</span>
+        <span class="font-mobile3 textangle">2023</span>
+        <span class="font-mobile3 textangle">2024</span>
+        <span class="font-mobile3 textangle">2025</span>
+        <span class="font-mobile3 textangle">2026</span>
+        <span class="font-mobile3 textangle">2027</span>
+        <span class="font-mobile3 textangle">2028</span>
       </div>
     </div>
   </section>
