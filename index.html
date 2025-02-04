@@ -79,7 +79,7 @@
       left: 73px;
       display: flex;
       justify-content: space-around;
-      width: calc(100% - 120px); /*Adjust for padding*/
+      width: calc(92% - 20px); /*Adjust for padding*/
       font-size: 0.7rem;
       color: rgba(255, 255, 255, 0.863);
 
@@ -103,6 +103,7 @@
       text-align: center;
       color: white;
       font-size: 0.8rem;
+      width: calc(100% - -29px);
       z-index: 3 !important;
       position: relative;
       animation: border-animate-reverse 1.5s linear forwards;
@@ -200,18 +201,34 @@
       padding-bottom: 0px;
       background-color:#1d1d25; /* Static semi-transparent background */
     }
+    .bars3 {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        width: calc(100% - -297px);
+        padding-left: 20px;
+        padding-right: 10px;
+    }
     .x-axis-labels3 {
-    position: absolute;
-    bottom: 1px;
-    left: 67px;
-    display: flex;
-    /* background-color: red */
-;
-    justify-content: space-around;
-    width: calc(100% - 24%);
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.863);
-}
+      left: 79px;
+      position: absolute;
+        bottom: 1px;
+        display: flex;
+      /* background-color: red; */
+        justify-content: space-around;
+        width: calc(100% - -198px);
+        font-size: 0.7rem;
+    }
+    .grid-line3 {
+    position: absolute !important;
+    left: 80px;
+    width: calc(100% - -200px) !important; /* Match chart container width */
+    height: 0.5px;
+    background-color: #afafaf3b; /* Line color */
+    /* position: relative !important; */
+    z-index: 0 !important;
+  }
     .font-mobile3{
     font-size:xx-small;
   }
@@ -241,34 +258,8 @@
       padding-bottom: 0px;
       background-color:#1d1d25; /* Static semi-transparent background */
     }
-    .grid-line3 {
-    position: absolute !important;
-    left: 80px;
-    width: calc(100% - -200px) !important; /* Match chart container width */
-    height: 0.5px;
-    background-color: #afafaf3b; /* Line color */
-    /* position: relative !important; */
-    z-index: 0 !important;
-  }
-  .bars3 {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        height: 100%;
-        width: calc(100% - -297px);
-        padding-left: 20px;
-        padding-right: 10px;
-    }
-    .x-axis-labels3 {
-      left: 79px;
-      position: absolute;
-        bottom: 1px;
-        display: flex;
-      /* background-color: red; */
-        justify-content: space-around;
-        width: calc(100% - -198px);
-        font-size: 0.7rem;
-    }
+   
+  
     .grid-line-3m3 {
     bottom: 130px; /* 80% height for $3 Million */
   }
@@ -342,7 +333,7 @@
     .grid-line3 {
     position: absolute !important;
     left: 70px;
-    width: calc(95% - 60px); /* Match chart container width */
+    width: calc(100% - 77px); /* Match chart container width */
     height: 0.5px;
     background-color: #afafaf3b; /* Line color */
     /* position: relative !important; */
